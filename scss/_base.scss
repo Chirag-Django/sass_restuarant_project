@@ -1,0 +1,46 @@
+$color-dark: rgb(59, 22, 22);
+$color-black: black;
+$color-primary: rgb(248, 225, 122);
+$color-secondary: rgb(247, 186, 137);
+$color-wheat: wheat;
+$color-white: white;
+
+$font-dancing: 'Dancing Script', cursive;
+$font-sans: sans-serif;
+
+
+@mixin flexlayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles($transform:uppercase) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: $transform;
+}
+
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $color-dark;
+}
+
+
